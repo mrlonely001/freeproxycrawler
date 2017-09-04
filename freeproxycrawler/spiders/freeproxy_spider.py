@@ -19,7 +19,7 @@ class FreeProxySpider(scrapy.Spider):
         }
 
     def start_requests(self):
-        base_url = "http://www.xicidaili.com/wn/<pageth>/"
+        base_url = "http://www.xicidaili.com/nn/<pageth>/"
         urls = []
         for i in range(1,3):
             urls.append(base_url.replace("<pageth>",str(i)))
